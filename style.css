@@ -1,0 +1,235 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol,/*  ul, li, */
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	/* border: 0; */
+	/* font-size: 100%;
+	font: inherit; */
+	/* vertical-align: baseline; */
+}
+/* HTML5 display-role reset for older browsers */
+
+/* article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+} */
+a{
+  text-decoration: none;
+}
+li{
+  list-style: none;
+}
+.mein{
+  width: 100%;
+  height: 600px;
+  background-image:url(file/header/p4.png);
+  background-repeat: no-repeat;
+  /* background-size: contain; */
+  /* ここ２行後で確認する */
+  background-size: auto 100%;
+  background-position: right 0;
+}
+
+.header{
+  padding-top:20px;
+  padding-left: 160px;
+}
+
+.header-list{
+  /* list-style: none; */
+  display: inline-block;
+  float: right;
+}
+.header-list li{
+  display: inline-block;
+  padding-left:15px;
+  margin-left: 10px;
+  font-size:12px;
+  text-align: center;
+  font-weight:600;
+}
+.header-list span{
+  font-size:10px;
+}
+.header-mark{
+  position: relative;
+  top:-10px;
+  margin-right: 200px;
+  border: solid 1px orange;
+  padding: 13px;
+  border-radius: 30px;
+  color: white;
+  background-color: orange;
+}
+
+.title{
+  padding-left:160px;
+  padding-top:130px;
+  float: left;
+}
+.title-logo2{
+  float:right;
+}
+.title p{
+  font-size: 20px;
+  font-weight:600;
+  padding-bottom: 15px;
+}
+.title span{
+  color: orange;
+}
+.title-txt{
+  padding: 30px 0;
+}
+.header-mar2{
+  font-size: 16px;
+  border: solid 1px;
+  padding: 20px 100px;
+  border-radius: 30px;
+  color: white;
+  background-color: orange;
+}
+.hogehoge{
+  font-size: 10px;
+  color: gray;
+  margin-top:160px;
+}
+
+.oreng-box{
+  background-color: orange;
+  padding: 30px 165px 100px 165px;
+}
+
+.campaign-txt h1{
+  color: white;
+  margin-right: 630px;
+  font-size: 40px;
+  padding:30px 0 20px 0;
+  text-align: left;
+}
+.campaign-txt p{
+  color: white;
+  font-size: 14px;
+  font-weight:700;
+  text-align: left;
+  margin:0 515px 0 0; /*後で右を修正*/
+}
+.header-mark3{
+  position: relative;
+  top:-40px;
+  font-weight:600;
+  color: #f79314;
+  background-color: white;
+  border: solid 1px;
+  padding: 10px 100px;
+  border-radius: 40px;
+  text-align:center;
+  float: right;
+}
+
+.main-header{
+  text-align: center;
+  margin: 0 80px;
+}
+.main-h{
+  font-size: 20px;
+  padding-top: 50px;
+  font-weight:800;
+}
+.main-h1{
+  font-size: 16px;
+  font-weight:600;
+  bottom: 10px;
+  margin-bottom:80px;
+  position: relative;
+}
+.main-h1::before{
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -20px;/*線の上下位置*/
+  display: inline-block;
+  width: 50px;/*線の長さ*/
+  height: 5px;/*線の太さ*/
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);/*位置調整*/
+  background-color: orange;/*線の色*/
+}
+.main-header-log p{
+  margin:0 300px;
+}
+.oreng-nmber{
+  font-weight:600;
+  font-size: 40px;
+  color: orange;
+  border: solid 1px #fcfaf5;
+  padding: 20px 15px;
+  border-radius: 50%;
+  background-color: #fcfaf5;
+}
+.main-log h4{
+ font-size: 25px;
+ position: relative;
+ 
+}
+.main-log h4::before{
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: -5px;/*線の上下位置*/
+  display: inline-block;
+  width: 200px;/*線の長さ*/
+  height: 5px;/*線の太さ*/
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);/*位置調整*/
+  background-color: orange;/*線の色*/
+}
+.company-log{
+  display: flex;
+  flex-wrap:wrap;
+  margin: 0 100px;
+}
+.company-log1{
+  display: flex;
+ justify-content:space-evenly;
+ background-color: #fcfaf5;
+}
+.main-box{
+  background-color: blue;
+  border-radius: 10px;
+}
+
